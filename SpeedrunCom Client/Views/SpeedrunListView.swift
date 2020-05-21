@@ -6,7 +6,7 @@ struct SpeedrunListView: View {
     var body: some View {
         GeometryReader { geometryProxy in
             List() {
-                SpeedrunFilter(viewModel: self.viewModel)
+                SpeedrunFilterView(filterModel: self.$viewModel.filterModel)
                 ForEach(self.viewModel.speedruns) { speedrun in
                     SpeedrunItemView(speedrun: speedrun, geometryProxy: geometryProxy)
                 }

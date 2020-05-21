@@ -1,11 +1,17 @@
 import Foundation
 import Combine
 
+struct SpeedrunFilterModel {
+    var runStatus: RunStatus = .new
+    var orderBy: OrderBy.Run = .game
+    var sorting: SortDirection = .desc
+}
+
 class SpeedrunListViewModel: ObservableObject {
     @Published private(set) var speedruns: [Speedrun] = []
-    @Published var runStatus: RunStatus = .new { didSet { fetchSpeedruns() }}
-    @Published var orderBy: OrderBy.Run = .game { didSet { fetchSpeedruns() }}
-    @Published var sorting: SortDirection = .desc { didSet { fetchSpeedruns() }}
+    @Published var filterModel = SpeedrunFilterModel() {
+        didSet { fetchSpeedruns()}
+    }
 
     private var fetchRequestToken: AnyCancellable?
 
@@ -19,9 +25,9 @@ extension SpeedrunListViewModel {
         fetchRequestToken?.cancel()
         fetchRequestToken = SpeedrunApi
             .speedruns(
-                status: runStatus,
-                orderBy: orderBy,
-                sorting: sorting
+                status: filterModel.runStatus,
+                orderBy: filterModel.orderBy,
+                sorting: filterModel.sorting
             )
             .mapError({ (error) -> Error in
                 print(error)
