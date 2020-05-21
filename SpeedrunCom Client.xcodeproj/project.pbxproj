@@ -23,6 +23,7 @@
 		68AE086BA7817A14DC9EF4C8 /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68AE074219C6263F9B7A3CC9 /* Networking.swift */; };
 		68AE08E2D76BA0550E058D42 /* SpeedrunApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68AE092199FEDC6CB96F615F /* SpeedrunApi.swift */; };
 		68AE095806C842F26ABDFEC3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68AE08BB3C0E50DA844BAB6C /* ContentView.swift */; };
+		68AE0927E71C8E45660730DE /* SearchGamesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68AE09052DDC2E8218110885 /* SearchGamesViewModel.swift */; };
 		68AE09888B7765D9340DA86C /* GameAssets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68AE0FB9C678C914DB1401AF /* GameAssets.swift */; };
 		68AE09ABB97E55CA5B46D216 /* GameNames.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68AE0C029F5542915054A698 /* GameNames.swift */; };
 		68AE0A6CE5EF1E5CE89F3860 /* ImageAsset.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68AE02972C39EF82720B8D3B /* ImageAsset.swift */; };
@@ -48,6 +49,7 @@
 		68AE078B0668E609B95E3D1A /* Category.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
 		68AE08811FF5B975E0861F24 /* LinkKind.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LinkKind.swift; sourceTree = "<group>"; };
 		68AE08BB3C0E50DA844BAB6C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		68AE09052DDC2E8218110885 /* SearchGamesViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchGamesViewModel.swift; sourceTree = "<group>"; };
 		68AE092199FEDC6CB96F615F /* SpeedrunApi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpeedrunApi.swift; sourceTree = "<group>"; };
 		68AE0982CDACBADA6D92F982 /* Link.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Link.swift; sourceTree = "<group>"; };
 		68AE09F61DA72D0B7C50F1B1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -134,6 +136,14 @@
 			path = Asset;
 			sourceTree = "<group>";
 		};
+		68AE080219B68EBF1E9A4635 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				68AE09052DDC2E8218110885 /* SearchGamesViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
 		68AE0889FF529C37D80374A8 /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
@@ -154,6 +164,7 @@
 				68AE0889FF529C37D80374A8 /* Preview Content */,
 				68AE0239B0305BF66055F522 /* Models */,
 				68AE02D05F324538ACCDAE14 /* Networking */,
+				68AE080219B68EBF1E9A4635 /* ViewModels */,
 			);
 			path = "SpeedrunCom Client";
 			sourceTree = "<group>";
@@ -273,6 +284,7 @@
 				68AE08E2D76BA0550E058D42 /* SpeedrunApi.swift in Sources */,
 				68AE069E4E348DFF71FE9420 /* Sorting.swift in Sources */,
 				68AE0AC9C3E95DA26290E51D /* Endpoint.swift in Sources */,
+				68AE0927E71C8E45660730DE /* SearchGamesViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
