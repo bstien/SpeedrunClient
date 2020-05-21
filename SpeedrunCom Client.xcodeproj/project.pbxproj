@@ -30,6 +30,7 @@
 		68AE09ABB97E55CA5B46D216 /* GameNames.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68AE0C029F5542915054A698 /* GameNames.swift */; };
 		68AE0A6CE5EF1E5CE89F3860 /* ImageAsset.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68AE02972C39EF82720B8D3B /* ImageAsset.swift */; };
 		68AE0AC9C3E95DA26290E51D /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68AE011899CBC808F993E8FD /* Endpoint.swift */; };
+		68AE0B45102F4261E15F06AE /* GameItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68AE0100344D8DF85742ECC5 /* GameItemView.swift */; };
 		68AE0BFB213BFB620E7ECCB8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68AE006D4B9D2413B8AEE2CA /* SceneDelegate.swift */; };
 		68AE0C7C45EFF98BEE4C32BE /* FailableDecodableArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68AE0FE30EA01534E448E358 /* FailableDecodableArray.swift */; };
 		68AE0CB22787E893CEB6C69F /* GameType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68AE0DDB4E771A8A5FE4FE31 /* GameType.swift */; };
@@ -40,6 +41,7 @@
 
 /* Begin PBXFileReference section */
 		68AE006D4B9D2413B8AEE2CA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		68AE0100344D8DF85742ECC5 /* GameItemView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameItemView.swift; sourceTree = "<group>"; };
 		68AE011899CBC808F993E8FD /* Endpoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
 		68AE02972C39EF82720B8D3B /* ImageAsset.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageAsset.swift; sourceTree = "<group>"; };
 		68AE036492B66D122F869355 /* Sorting.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sorting.swift; sourceTree = "<group>"; };
@@ -163,6 +165,7 @@
 		68AE06199D3211AC33395D6D /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				68AE0100344D8DF85742ECC5 /* GameItemView.swift */,
 				68AE0E17E6C74459F9EE8468 /* RemoteImageView.swift */,
 			);
 			path = Components;
@@ -319,6 +322,7 @@
 				68AE0927E71C8E45660730DE /* SearchGamesViewModel.swift in Sources */,
 				68AE02336DDCF26F2341D662 /* DateFormatterExtensions.swift in Sources */,
 				68AE0EF3DE9A0F3D134BE82B /* SearchGamesView.swift in Sources */,
+				68AE0B45102F4261E15F06AE /* GameItemView.swift in Sources */,
 				68AE07CAFA20950C9B64A48C /* RemoteImageView.swift in Sources */,
 				68AE05D4F85607138946FB3F /* RemoteImageClient.swift in Sources */,
 			);
