@@ -4,15 +4,9 @@ struct SearchGamesView: View {
     @ObservedObject var viewModel = SearchGamesViewModel()
 
     var body: some View {
-        List(viewModel.games) { game in
-            HStack {
-                VStack(alignment: .leading) {
-                    Text(game.name)
-                        .font(.headline)
-                    Text(DateFormatter.yyyyMMdd.string(from: game.releaseDate!))
-                        .font(.caption)
-                        .italic()
-                }
+        GeometryReader { geometryProxy in
+            List(self.viewModel.games) { game in
+                GameItemView(game: game, geometryProxy: geometryProxy)
             }
         }
     }
