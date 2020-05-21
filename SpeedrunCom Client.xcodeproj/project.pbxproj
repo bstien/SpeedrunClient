@@ -13,6 +13,7 @@
 		68AE01230017F7B2F1B0B0EC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 68AE044A4F04ED0C07695D56 /* LaunchScreen.storyboard */; };
 		68AE017B7EE855A7AFEF9B00 /* LinkKind.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68AE08811FF5B975E0861F24 /* LinkKind.swift */; };
 		68AE0199934C1FF11B47D8D7 /* RunStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68AE0B10F713CBEEAC5B0B37 /* RunStatus.swift */; };
+		68AE01F9AE03EE461869FADE /* RunTimes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68AE0AF3030B7DE9CA049E78 /* RunTimes.swift */; };
 		68AE02336DDCF26F2341D662 /* DateFormatterExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68AE0789E214C932303E5B0E /* DateFormatterExtensions.swift */; };
 		68AE028BA68CFD7A116FE627 /* FailableDecodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68AE055950DF12348A4BE1A2 /* FailableDecodable.swift */; };
 		68AE03A4F7C509F0B71F8D65 /* Pagination.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68AE0772C484C01DEF3201B3 /* Pagination.swift */; };
@@ -34,6 +35,7 @@
 		68AE0AC9C3E95DA26290E51D /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68AE011899CBC808F993E8FD /* Endpoint.swift */; };
 		68AE0B45102F4261E15F06AE /* GameItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68AE0100344D8DF85742ECC5 /* GameItemView.swift */; };
 		68AE0BFB213BFB620E7ECCB8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68AE006D4B9D2413B8AEE2CA /* SceneDelegate.swift */; };
+		68AE0C7B7FD59C5AE5895981 /* Speedrun.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68AE000A7078DA4937EEEF38 /* Speedrun.swift */; };
 		68AE0C7C45EFF98BEE4C32BE /* FailableDecodableArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68AE0FE30EA01534E448E358 /* FailableDecodableArray.swift */; };
 		68AE0CB22787E893CEB6C69F /* GameType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68AE0DDB4E771A8A5FE4FE31 /* GameType.swift */; };
 		68AE0CC05458E79BF85B4F70 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68AE0C1F84070B68DD4D9460 /* AppDelegate.swift */; };
@@ -42,6 +44,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		68AE000A7078DA4937EEEF38 /* Speedrun.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Speedrun.swift; sourceTree = "<group>"; };
 		68AE006D4B9D2413B8AEE2CA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		68AE0100344D8DF85742ECC5 /* GameItemView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameItemView.swift; sourceTree = "<group>"; };
 		68AE011899CBC808F993E8FD /* Endpoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
@@ -101,6 +104,7 @@
 				68AE057EBFAE24DE67AE23AA /* Asset */,
 				68AE078B0668E609B95E3D1A /* Category.swift */,
 				68AE036492B66D122F869355 /* SortDirection.swift */,
+				68AE04FC9C25858C0044B18A /* Speedrun */,
 				68AE0183DC794248B61F20C2 /* OrderBy.swift */,
 				68AE0B10F713CBEEAC5B0B37 /* RunStatus.swift */,
 			);
@@ -158,6 +162,15 @@
 				68AE0A040055FC1EC5AF7F66 /* SpeedrunCom Client.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		68AE04FC9C25858C0044B18A /* Speedrun */ = {
+			isa = PBXGroup;
+			children = (
+				68AE000A7078DA4937EEEF38 /* Speedrun.swift */,
+				68AE0AF3030B7DE9CA049E78 /* RunTimes.swift */,
+			);
+			path = Speedrun;
 			sourceTree = "<group>";
 		};
 		68AE057EBFAE24DE67AE23AA /* Asset */ = {
@@ -332,6 +345,8 @@
 				68AE0B45102F4261E15F06AE /* GameItemView.swift in Sources */,
 				68AE07CAFA20950C9B64A48C /* RemoteImageView.swift in Sources */,
 				68AE05D4F85607138946FB3F /* RemoteImageClient.swift in Sources */,
+				68AE0C7B7FD59C5AE5895981 /* Speedrun.swift in Sources */,
+				68AE01F9AE03EE461869FADE /* RunTimes.swift in Sources */,
 				68AE04BDB1273BACBA2C9AE9 /* OrderBy.swift in Sources */,
 				68AE0199934C1FF11B47D8D7 /* RunStatus.swift in Sources */,
 			);
