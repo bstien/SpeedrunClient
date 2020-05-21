@@ -1,6 +1,6 @@
 import Foundation
 
-struct Speedrun: Decodable {
+struct Speedrun: Decodable, Identifiable {
     let id: String
     let status: RunStatus
     let date: String
