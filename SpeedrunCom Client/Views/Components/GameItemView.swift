@@ -21,10 +21,16 @@ struct GameItemView: View {
             .frame(width: self.imageSize, height: self.imageSize)
             .cornerRadius(8)
 
-            HStack(alignment: .top) {
-                Text(self.game.names.namePrioritized)
+            VStack(alignment: .leading) {
+                HStack(alignment: .top) {
+                    Text(self.game.names.namePrioritized)
+                    Spacer()
+                    Text(DateFormatter.yyyyMMdd.string(from: self.game.releaseDate!)).font(.caption).italic()
+                }
                 Spacer()
-                Text(DateFormatter.yyyyMMdd.string(from: self.game.releaseDate!)).font(.caption).italic()
+                HStack(alignment: .top) {
+                    Text("Platforms: ").fontWeight(.bold) + Text(game.platforms.map { $0.name }.joined(separator: ", "))
+                }
             }
         }
     }

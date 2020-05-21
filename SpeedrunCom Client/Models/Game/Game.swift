@@ -8,6 +8,7 @@ struct Game: Decodable, Identifiable {
     let releaseDate: Date?
     let categories: [Category]
     let assets: GameAssets
+    let platforms: [Platform]
     let links: [Link]
 
     enum CodingKeys: String, CodingKey {
@@ -40,6 +41,16 @@ struct Game: Decodable, Identifiable {
             releaseDate = date
         } else {
             releaseDate = nil
+        }
+
+        if let platforms = try? container.decode([String].self, forKey: .platforms) {
+            self.platforms = platforms.compactMap { id in
+                PlatformClient.shared.platforms.first { platform in
+                    platform.id == id
+                }
+            }
+        } else {
+            self.platforms = []
         }
     }
 }
