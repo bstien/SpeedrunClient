@@ -23,9 +23,3 @@ extension Game {
         names.namePrioritized
     }
 }
-
-struct SearchGamesView_Previews: PreviewProvider {
-    static var previews: some View {
-        SearchGamesView()
-    }
-}
