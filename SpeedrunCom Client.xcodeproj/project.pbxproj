@@ -23,7 +23,6 @@
 		68AE0815C54EA86C6F0AC011 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68AE078B0668E609B95E3D1A /* Category.swift */; };
 		68AE086BA7817A14DC9EF4C8 /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68AE074219C6263F9B7A3CC9 /* Networking.swift */; };
 		68AE08E2D76BA0550E058D42 /* SpeedrunApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68AE092199FEDC6CB96F615F /* SpeedrunApi.swift */; };
-		68AE095806C842F26ABDFEC3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68AE08BB3C0E50DA844BAB6C /* ContentView.swift */; };
 		68AE0927E71C8E45660730DE /* SearchGamesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68AE09052DDC2E8218110885 /* SearchGamesViewModel.swift */; };
 		68AE09888B7765D9340DA86C /* GameAssets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68AE0FB9C678C914DB1401AF /* GameAssets.swift */; };
 		68AE09ABB97E55CA5B46D216 /* GameNames.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68AE0C029F5542915054A698 /* GameNames.swift */; };
@@ -51,7 +50,6 @@
 		68AE0789E214C932303E5B0E /* DateFormatterExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateFormatterExtensions.swift; sourceTree = "<group>"; };
 		68AE078B0668E609B95E3D1A /* Category.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
 		68AE08811FF5B975E0861F24 /* LinkKind.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LinkKind.swift; sourceTree = "<group>"; };
-		68AE08BB3C0E50DA844BAB6C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		68AE09052DDC2E8218110885 /* SearchGamesViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchGamesViewModel.swift; sourceTree = "<group>"; };
 		68AE092199FEDC6CB96F615F /* SpeedrunApi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpeedrunApi.swift; sourceTree = "<group>"; };
 		68AE0982CDACBADA6D92F982 /* Link.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Link.swift; sourceTree = "<group>"; };
@@ -180,7 +178,6 @@
 				68AE044A4F04ED0C07695D56 /* LaunchScreen.storyboard */,
 				68AE0C1F84070B68DD4D9460 /* AppDelegate.swift */,
 				68AE006D4B9D2413B8AEE2CA /* SceneDelegate.swift */,
-				68AE08BB3C0E50DA844BAB6C /* ContentView.swift */,
 				68AE0889FF529C37D80374A8 /* Preview Content */,
 				68AE0239B0305BF66055F522 /* Models */,
 				68AE02D05F324538ACCDAE14 /* Networking */,
@@ -286,7 +283,6 @@
 			files = (
 				68AE0CC05458E79BF85B4F70 /* AppDelegate.swift in Sources */,
 				68AE0BFB213BFB620E7ECCB8 /* SceneDelegate.swift in Sources */,
-				68AE095806C842F26ABDFEC3 /* ContentView.swift in Sources */,
 				68AE028BA68CFD7A116FE627 /* FailableDecodable.swift in Sources */,
 				68AE0C7C45EFF98BEE4C32BE /* FailableDecodableArray.swift in Sources */,
 				68AE07763FC202447AC2778C /* Game.swift in Sources */,
