@@ -5,7 +5,11 @@ enum SpeedrunApi {
     private static let networking = Networking()
     private static let baseUrl = URL(string: "https://www.speedrun.com/api/v1")!
 
-    static func games(query: String? = nil, sorting: Sorting = .desc, offset: Int = 0) -> AnyPublisher<PaginatedResponse<[Game]>, Error> {
+    static func games(
+        query: String? = nil,
+        sorting: SortDirection = .desc,
+        offset: Int = 0
+    ) -> AnyPublisher<PaginatedResponse<[Game]>, Error> {
         var queryItems = [
             URLQueryItem(name: "offset", value: "\(offset)"),
             URLQueryItem(name: "orderby", value: "released"),

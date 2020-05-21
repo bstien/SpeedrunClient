@@ -1,13 +1,13 @@
 import Foundation
 
-enum Sorting: String, Identifiable, CaseIterable {
+enum SortDirection: String, Identifiable, CaseIterable {
     case asc
     case desc
 
     var id: String { rawValue }
 }
 
-extension Sorting {
+extension SortDirection {
     var humanReadable: String {
         switch self {
         case .asc: return "Oldest first"
