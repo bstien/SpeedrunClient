@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		68AE002778723479C2427FCA /* PaginatedResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68AE0DD382E58153075CA30D /* PaginatedResponse.swift */; };
 		68AE007A7B59E010428AA89C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 68AE0BA8436C4F06C7FFB0E5 /* Preview Assets.xcassets */; };
+		68AE00E8928CD9E838FAC82E /* platforms.json in Resources */ = {isa = PBXBuildFile; fileRef = 68AE07E5ABE3B6D35AE0519D /* platforms.json */; };
 		68AE010B11A9E2394C485F58 /* Link.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68AE0982CDACBADA6D92F982 /* Link.swift */; };
 		68AE01230017F7B2F1B0B0EC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 68AE044A4F04ED0C07695D56 /* LaunchScreen.storyboard */; };
 		68AE017B7EE855A7AFEF9B00 /* LinkKind.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68AE08811FF5B975E0861F24 /* LinkKind.swift */; };
@@ -31,6 +32,7 @@
 		68AE094AE1221A1B04A0434E /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68AE0181EDE2D55F7995DF3B /* Networking.swift */; };
 		68AE09888B7765D9340DA86C /* GameAssets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68AE0FB9C678C914DB1401AF /* GameAssets.swift */; };
 		68AE09ABB97E55CA5B46D216 /* GameNames.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68AE0C029F5542915054A698 /* GameNames.swift */; };
+		68AE0A3D516427E7B33A027F /* PlatformClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68AE04D9E2E1A52E55CDBE66 /* PlatformClient.swift */; };
 		68AE0A6CE5EF1E5CE89F3860 /* ImageAsset.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68AE02972C39EF82720B8D3B /* ImageAsset.swift */; };
 		68AE0B45102F4261E15F06AE /* GameItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68AE0100344D8DF85742ECC5 /* GameItemView.swift */; };
 		68AE0BFB213BFB620E7ECCB8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68AE006D4B9D2413B8AEE2CA /* SceneDelegate.swift */; };
@@ -59,12 +61,14 @@
 		68AE036492B66D122F869355 /* SortDirection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SortDirection.swift; sourceTree = "<group>"; };
 		68AE039A372C591F7778BB73 /* Response.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Response.swift; sourceTree = "<group>"; };
 		68AE042A79ED08237A857611 /* DataCodingKeys.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataCodingKeys.swift; sourceTree = "<group>"; };
+		68AE04D9E2E1A52E55CDBE66 /* PlatformClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlatformClient.swift; sourceTree = "<group>"; };
 		68AE055950DF12348A4BE1A2 /* FailableDecodable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FailableDecodable.swift; sourceTree = "<group>"; };
 		68AE068978F1AAB4CC125D59 /* Game.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
 		68AE06F88B7AD6C7C59A87A5 /* RemoteImageClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RemoteImageClient.swift; sourceTree = "<group>"; };
 		68AE0772C484C01DEF3201B3 /* Pagination.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pagination.swift; sourceTree = "<group>"; };
 		68AE0789E214C932303E5B0E /* DateFormatterExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateFormatterExtensions.swift; sourceTree = "<group>"; };
 		68AE078B0668E609B95E3D1A /* Category.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		68AE07E5ABE3B6D35AE0519D /* platforms.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = platforms.json; sourceTree = "<group>"; };
 		68AE080E5C5E5D83B2A0AFBE /* SpeedrunFilterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpeedrunFilterView.swift; sourceTree = "<group>"; };
 		68AE08811FF5B975E0861F24 /* LinkKind.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LinkKind.swift; sourceTree = "<group>"; };
 		68AE09052DDC2E8218110885 /* SearchGamesViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchGamesViewModel.swift; sourceTree = "<group>"; };
@@ -101,6 +105,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		68AE01C60D222D90F60C8BD3 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				68AE07E5ABE3B6D35AE0519D /* platforms.json */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		68AE0239B0305BF66055F522 /* Models */ = {
 			isa = PBXGroup;
 			children = (
@@ -232,6 +244,7 @@
 				68AE080219B68EBF1E9A4635 /* ViewModels */,
 				68AE0404D0911AE22B9F4F63 /* Extensions */,
 				68AE0395B4D9D8EF60C68DB8 /* Views */,
+				68AE01C60D222D90F60C8BD3 /* Resources */,
 				68AE0A84F4C3FF1B1B4BE4C6 /* Clients */,
 			);
 			path = "SpeedrunCom Client";
@@ -241,6 +254,7 @@
 			isa = PBXGroup;
 			children = (
 				68AE08CFB1E9035AE45145CD /* Networking */,
+				68AE04D9E2E1A52E55CDBE66 /* PlatformClient.swift */,
 			);
 			path = Clients;
 			sourceTree = "<group>";
@@ -328,6 +342,7 @@
 				68AE058BFC17645893659C43 /* Assets.xcassets in Resources */,
 				68AE01230017F7B2F1B0B0EC /* LaunchScreen.storyboard in Resources */,
 				68AE007A7B59E010428AA89C /* Preview Assets.xcassets in Resources */,
+				68AE00E8928CD9E838FAC82E /* platforms.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -373,6 +388,7 @@
 				68AE0C60943C972B9C47C4E1 /* SpeedrunApi.swift in Sources */,
 				68AE0D60C699DED0E9AE2E2C /* Endpoint.swift in Sources */,
 				68AE0E3F25631C619086C652 /* RemoteImageClient.swift in Sources */,
+				68AE0A3D516427E7B33A027F /* PlatformClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
