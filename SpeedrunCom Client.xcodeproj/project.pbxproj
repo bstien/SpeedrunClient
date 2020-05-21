@@ -24,6 +24,7 @@
 		68AE09888B7765D9340DA86C /* GameAssets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68AE0FB9C678C914DB1401AF /* GameAssets.swift */; };
 		68AE09ABB97E55CA5B46D216 /* GameNames.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68AE0C029F5542915054A698 /* GameNames.swift */; };
 		68AE0A6CE5EF1E5CE89F3860 /* ImageAsset.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68AE02972C39EF82720B8D3B /* ImageAsset.swift */; };
+		68AE0AC9C3E95DA26290E51D /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68AE011899CBC808F993E8FD /* Endpoint.swift */; };
 		68AE0BFB213BFB620E7ECCB8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68AE006D4B9D2413B8AEE2CA /* SceneDelegate.swift */; };
 		68AE0C7C45EFF98BEE4C32BE /* FailableDecodableArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68AE0FE30EA01534E448E358 /* FailableDecodableArray.swift */; };
 		68AE0CB22787E893CEB6C69F /* GameType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68AE0DDB4E771A8A5FE4FE31 /* GameType.swift */; };
@@ -33,6 +34,7 @@
 
 /* Begin PBXFileReference section */
 		68AE006D4B9D2413B8AEE2CA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		68AE011899CBC808F993E8FD /* Endpoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
 		68AE02972C39EF82720B8D3B /* ImageAsset.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageAsset.swift; sourceTree = "<group>"; };
 		68AE039A372C591F7778BB73 /* Response.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Response.swift; sourceTree = "<group>"; };
 		68AE042A79ED08237A857611 /* DataCodingKeys.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataCodingKeys.swift; sourceTree = "<group>"; };
@@ -87,6 +89,7 @@
 			isa = PBXGroup;
 			children = (
 				68AE074219C6263F9B7A3CC9 /* Networking.swift */,
+				68AE011899CBC808F993E8FD /* Endpoint.swift */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -261,6 +264,7 @@
 				68AE0A6CE5EF1E5CE89F3860 /* ImageAsset.swift in Sources */,
 				68AE0815C54EA86C6F0AC011 /* Category.swift in Sources */,
 				68AE086BA7817A14DC9EF4C8 /* Networking.swift in Sources */,
+				68AE0AC9C3E95DA26290E51D /* Endpoint.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

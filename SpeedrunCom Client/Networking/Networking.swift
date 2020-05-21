@@ -17,4 +17,17 @@ struct Networking {
         .receive(on: DispatchQueue.main)
         .eraseToAnyPublisher()
     }
+
+    func request<T: Decodable>(_ endpoint: Endpoint, baseUrl: URL) -> AnyPublisher<T, Error> {
+        guard var components = URLComponents(url: baseUrl.appendingPathComponent(endpoint.path), resolvingAgainstBaseURL: true)
+        else { fatalError("Couldn't create URLComponents") }
+
+        components.queryItems = endpoint.queryItems
+
+        let request = URLRequest(url: components.url!)
+
+        return run(request)
+            .map(\.value)
+            .eraseToAnyPublisher()
+    }
 }
