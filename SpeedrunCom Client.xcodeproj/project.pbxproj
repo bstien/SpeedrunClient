@@ -21,6 +21,7 @@
 		68AE069E4E348DFF71FE9420 /* Sorting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68AE036492B66D122F869355 /* Sorting.swift */; };
 		68AE06A44ECD67C1AC475315 /* Genre.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68AE0B62432C1CB27E38C805 /* Genre.swift */; };
 		68AE07763FC202447AC2778C /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68AE068978F1AAB4CC125D59 /* Game.swift */; };
+		68AE07CAFA20950C9B64A48C /* RemoteImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68AE0E17E6C74459F9EE8468 /* RemoteImageView.swift */; };
 		68AE0815C54EA86C6F0AC011 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68AE078B0668E609B95E3D1A /* Category.swift */; };
 		68AE086BA7817A14DC9EF4C8 /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68AE074219C6263F9B7A3CC9 /* Networking.swift */; };
 		68AE08E2D76BA0550E058D42 /* SpeedrunApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68AE092199FEDC6CB96F615F /* SpeedrunApi.swift */; };
@@ -66,6 +67,7 @@
 		68AE0CA0B18F41DFADF70355 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = Info.plist; sourceTree = "<group>"; };
 		68AE0DD382E58153075CA30D /* PaginatedResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaginatedResponse.swift; sourceTree = "<group>"; };
 		68AE0DDB4E771A8A5FE4FE31 /* GameType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameType.swift; sourceTree = "<group>"; };
+		68AE0E17E6C74459F9EE8468 /* RemoteImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RemoteImageView.swift; sourceTree = "<group>"; };
 		68AE0FB9C678C914DB1401AF /* GameAssets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameAssets.swift; sourceTree = "<group>"; };
 		68AE0FE30EA01534E448E358 /* FailableDecodableArray.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FailableDecodableArray.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -119,6 +121,7 @@
 			isa = PBXGroup;
 			children = (
 				68AE0BE6ABADA997E04B8B9C /* SearchGamesView.swift */,
+				68AE06199D3211AC33395D6D /* Components */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -155,6 +158,14 @@
 				68AE02972C39EF82720B8D3B /* ImageAsset.swift */,
 			);
 			path = Asset;
+			sourceTree = "<group>";
+		};
+		68AE06199D3211AC33395D6D /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				68AE0E17E6C74459F9EE8468 /* RemoteImageView.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 		68AE080219B68EBF1E9A4635 /* ViewModels */ = {
@@ -308,6 +319,7 @@
 				68AE0927E71C8E45660730DE /* SearchGamesViewModel.swift in Sources */,
 				68AE02336DDCF26F2341D662 /* DateFormatterExtensions.swift in Sources */,
 				68AE0EF3DE9A0F3D134BE82B /* SearchGamesView.swift in Sources */,
+				68AE07CAFA20950C9B64A48C /* RemoteImageView.swift in Sources */,
 				68AE05D4F85607138946FB3F /* RemoteImageClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
