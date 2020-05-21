@@ -9,13 +9,13 @@ struct Networking {
 
     func run<T: Decodable>(_ request: URLRequest) -> AnyPublisher<Response<T>, Error> {
         URLSession.shared
-        .dataTaskPublisher(for: request)
-        .tryMap { result -> Response<T> in
-            let value = try JSONDecoder().decode(T.self, from: result.data)
-            return Response(value: value, response: result.response)
-        }
-        .receive(on: DispatchQueue.main)
-        .eraseToAnyPublisher()
+            .dataTaskPublisher(for: request)
+            .tryMap { result -> Response<T> in
+                let value = try JSONDecoder().decode(T.self, from: result.data)
+                return Response(value: value, response: result.response)
+            }
+            .receive(on: DispatchQueue.main)
+            .eraseToAnyPublisher()
     }
 
     func request<T: Decodable>(_ endpoint: Endpoint, baseUrl: URL) -> AnyPublisher<T, Error> {

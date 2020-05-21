@@ -17,6 +17,7 @@
 		68AE03A4F7C509F0B71F8D65 /* Pagination.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68AE0772C484C01DEF3201B3 /* Pagination.swift */; };
 		68AE0449BA5C20B889BF26BF /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68AE039A372C591F7778BB73 /* Response.swift */; };
 		68AE058BFC17645893659C43 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 68AE0A33FBB6F4C7EFBE5CD4 /* Assets.xcassets */; };
+		68AE05D4F85607138946FB3F /* RemoteImageClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68AE0697DC34266A66EE6F80 /* RemoteImageClient.swift */; };
 		68AE069E4E348DFF71FE9420 /* Sorting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68AE036492B66D122F869355 /* Sorting.swift */; };
 		68AE06A44ECD67C1AC475315 /* Genre.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68AE0B62432C1CB27E38C805 /* Genre.swift */; };
 		68AE07763FC202447AC2778C /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68AE068978F1AAB4CC125D59 /* Game.swift */; };
@@ -45,6 +46,7 @@
 		68AE042A79ED08237A857611 /* DataCodingKeys.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataCodingKeys.swift; sourceTree = "<group>"; };
 		68AE055950DF12348A4BE1A2 /* FailableDecodable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FailableDecodable.swift; sourceTree = "<group>"; };
 		68AE068978F1AAB4CC125D59 /* Game.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
+		68AE0697DC34266A66EE6F80 /* RemoteImageClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RemoteImageClient.swift; sourceTree = "<group>"; };
 		68AE074219C6263F9B7A3CC9 /* Networking.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Networking.swift; sourceTree = "<group>"; };
 		68AE0772C484C01DEF3201B3 /* Pagination.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pagination.swift; sourceTree = "<group>"; };
 		68AE0789E214C932303E5B0E /* DateFormatterExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateFormatterExtensions.swift; sourceTree = "<group>"; };
@@ -100,6 +102,7 @@
 				68AE074219C6263F9B7A3CC9 /* Networking.swift */,
 				68AE092199FEDC6CB96F615F /* SpeedrunApi.swift */,
 				68AE011899CBC808F993E8FD /* Endpoint.swift */,
+				68AE0697DC34266A66EE6F80 /* RemoteImageClient.swift */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -305,6 +308,7 @@
 				68AE0927E71C8E45660730DE /* SearchGamesViewModel.swift in Sources */,
 				68AE02336DDCF26F2341D662 /* DateFormatterExtensions.swift in Sources */,
 				68AE0EF3DE9A0F3D134BE82B /* SearchGamesView.swift in Sources */,
+				68AE05D4F85607138946FB3F /* RemoteImageClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
