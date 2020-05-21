@@ -41,6 +41,7 @@
 		68AE0C7C45EFF98BEE4C32BE /* FailableDecodableArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68AE0FE30EA01534E448E358 /* FailableDecodableArray.swift */; };
 		68AE0CB22787E893CEB6C69F /* GameType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68AE0DDB4E771A8A5FE4FE31 /* GameType.swift */; };
 		68AE0CC05458E79BF85B4F70 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68AE0C1F84070B68DD4D9460 /* AppDelegate.swift */; };
+		68AE0D5B89DB1F72C4F6BBEA /* SpeedrunFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68AE080E5C5E5D83B2A0AFBE /* SpeedrunFilter.swift */; };
 		68AE0E87BDEAF8F590E3B32E /* DataCodingKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68AE042A79ED08237A857611 /* DataCodingKeys.swift */; };
 		68AE0EED691CEBE2B0029BD9 /* SpeedrunItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68AE0C1A4208C62986D8528A /* SpeedrunItemView.swift */; };
 		68AE0EF3DE9A0F3D134BE82B /* SearchGamesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68AE0BE6ABADA997E04B8B9C /* SearchGamesView.swift */; };
@@ -64,6 +65,7 @@
 		68AE0772C484C01DEF3201B3 /* Pagination.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pagination.swift; sourceTree = "<group>"; };
 		68AE0789E214C932303E5B0E /* DateFormatterExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateFormatterExtensions.swift; sourceTree = "<group>"; };
 		68AE078B0668E609B95E3D1A /* Category.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		68AE080E5C5E5D83B2A0AFBE /* SpeedrunFilter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpeedrunFilter.swift; sourceTree = "<group>"; };
 		68AE08811FF5B975E0861F24 /* LinkKind.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LinkKind.swift; sourceTree = "<group>"; };
 		68AE09052DDC2E8218110885 /* SearchGamesViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchGamesViewModel.swift; sourceTree = "<group>"; };
 		68AE092199FEDC6CB96F615F /* SpeedrunApi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpeedrunApi.swift; sourceTree = "<group>"; };
@@ -142,6 +144,7 @@
 				68AE0BE6ABADA997E04B8B9C /* SearchGamesView.swift */,
 				68AE06199D3211AC33395D6D /* Components */,
 				68AE02FC1643CDB5BD032E6D /* SpeedrunListView.swift */,
+				68AE080E5C5E5D83B2A0AFBE /* SpeedrunFilter.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -361,6 +364,7 @@
 				68AE079C6C0C96BD47804EFE /* SpeedrunListView.swift in Sources */,
 				68AE02830C2DB48E0A42BEF4 /* SpeedrunListViewModel.swift in Sources */,
 				68AE0EED691CEBE2B0029BD9 /* SpeedrunItemView.swift in Sources */,
+				68AE0D5B89DB1F72C4F6BBEA /* SpeedrunFilter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

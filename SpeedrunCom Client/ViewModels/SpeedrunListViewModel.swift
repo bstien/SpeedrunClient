@@ -2,8 +2,12 @@ import Foundation
 import Combine
 
 class SpeedrunListViewModel: ObservableObject {
-    @Published var speedruns: [Speedrun] = []
-    var cancellationToken: AnyCancellable?
+    @Published private(set) var speedruns: [Speedrun] = []
+    @Published var runStatus: RunStatus = .new { didSet { fetchSpeedruns() }}
+    @Published var orderBy: OrderBy.Run = .game { didSet { fetchSpeedruns() }}
+    @Published var sorting: SortDirection = .desc { didSet { fetchSpeedruns() }}
+
+    private var fetchRequestToken: AnyCancellable?
 
     init() {
         fetchSpeedruns()
@@ -12,8 +16,13 @@ class SpeedrunListViewModel: ObservableObject {
 
 extension SpeedrunListViewModel {
     func fetchSpeedruns() {
-        cancellationToken = SpeedrunApi
-            .speedruns()
+        fetchRequestToken?.cancel()
+        fetchRequestToken = SpeedrunApi
+            .speedruns(
+                status: runStatus,
+                orderBy: orderBy,
+                sorting: sorting
+            )
             .mapError({ (error) -> Error in
                 print(error)
                 return error
