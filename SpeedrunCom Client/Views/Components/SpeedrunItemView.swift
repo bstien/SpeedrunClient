@@ -24,7 +24,7 @@ struct SpeedrunItemView: View {
             VStack(alignment: .leading) {
                 Text(self.speedrun.game?.name ?? "Unknown game")
                 Text(self.speedrun.times.primary)
-                Text(self.speedrun.date)
+                Text(self.speedrun.date ?? "Unknown run date")
                 Text(self.speedrun.status.rawValue)
             }
         }
