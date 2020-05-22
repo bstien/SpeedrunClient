@@ -1,7 +1,7 @@
 import Foundation
 import Combine
 
-struct SpeedrunFilterModel {
+struct SpeedrunFilterModel: Equatable {
     var runStatus: RunStatus = .new
     var orderBy: OrderBy.Run = .game
     var sorting: SortDirection = .desc
@@ -10,7 +10,10 @@ struct SpeedrunFilterModel {
 class SpeedrunListViewModel: ObservableObject {
     @Published private(set) var speedruns: [Speedrun] = []
     @Published var filterModel = SpeedrunFilterModel() {
-        didSet { fetchSpeedruns()}
+        didSet {
+            guard oldValue != filterModel else { return }
+            fetchSpeedruns()
+        }
     }
 
     private var fetchRequestToken: AnyCancellable?
