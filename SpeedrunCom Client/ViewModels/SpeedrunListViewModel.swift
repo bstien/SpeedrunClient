@@ -12,13 +12,19 @@ class SpeedrunListViewModel: ObservableObject {
     @Published var filterModel = SpeedrunFilterModel() {
         didSet {
             guard oldValue != filterModel else { return }
+            currentOffset = 0
             fetchSpeedruns()
         }
     }
 
+    private var currentOffset = 0
     private var fetchRequestToken: AnyCancellable?
 
     init() {
+        fetchSpeedruns()
+    }
+
+    func loadNextPage() {
         fetchSpeedruns()
     }
 }
@@ -30,7 +36,8 @@ extension SpeedrunListViewModel {
             .speedruns(
                 status: filterModel.runStatus,
                 orderBy: filterModel.orderBy,
-                sorting: filterModel.sorting
+                sorting: filterModel.sorting,
+                offset: currentOffset
             )
             .mapError({ (error) -> Error in
                 print(error)
@@ -39,7 +46,12 @@ extension SpeedrunListViewModel {
             .sink(
             receiveCompletion: { _ in },
             receiveValue: {
-                self.speedruns = $0.data
+                if $0.pagination.offset == 0 {
+                    self.speedruns = $0.data
+                } else {
+                    self.speedruns.append(contentsOf: $0.data)
+                }
+                self.currentOffset = $0.pagination.nextOffset
             }
         )
     }
