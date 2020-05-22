@@ -25,7 +25,7 @@ struct Networking {
         components.queryItems = endpoint.queryItems
 
         let request = URLRequest(url: components.url!)
-
+        print("🔥🔥🔥🔥 request.url = \(request.url!)")
         return run(request)
             .map(\.value)
             .eraseToAnyPublisher()
