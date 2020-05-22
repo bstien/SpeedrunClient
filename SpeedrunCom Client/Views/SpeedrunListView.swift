@@ -4,13 +4,22 @@ struct SpeedrunListView: View {
     @ObservedObject var viewModel = SpeedrunListViewModel()
 
     var body: some View {
-        GeometryReader { geometryProxy in
-            List() {
-                SpeedrunFilterView(filterModel: self.$viewModel.filterModel)
-                ForEach(self.viewModel.speedruns) { speedrun in
-                    SpeedrunItemView(speedrun: speedrun, geometryProxy: geometryProxy)
+        NavigationView {
+            GeometryReader { geometryProxy in
+                List() {
+                    Section(header:
+                        SpeedrunFilterView(filterModel: self.$viewModel.filterModel)
+                            .listRowInsets(EdgeInsets())
+                            .padding()
+                    ) {
+                        ForEach(self.viewModel.speedruns) { speedrun in
+                            NavigationLink(destination: SpeedrunDetailView(speedrun: speedrun)) {
+                                SpeedrunItemView(speedrun: speedrun, geometryProxy: geometryProxy)
+                            }
+                        }
+                    }
                 }
-            }
+            }.navigationBarTitle("Search speedruns")
         }
     }
 }
