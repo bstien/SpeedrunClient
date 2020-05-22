@@ -12,7 +12,7 @@ struct SpeedrunItemView: View {
         HStack(alignment: .top) {
             Group {
                 RemoteImageView(
-                    url: self.speedrun.game?.assets.coverMedium?.url,
+                    url: self.speedrun.game.assets.coverMedium?.url,
                     errorView: { Rectangle().fill(Color.red) },
                     imageView: { $0.resizable() },
                     loadingView: { Rectangle().fill(Color.gray) }
@@ -22,7 +22,7 @@ struct SpeedrunItemView: View {
             .cornerRadius(8)
 
             VStack(alignment: .leading) {
-                Text(self.speedrun.game?.name ?? "Unknown game")
+                Text(self.speedrun.game.name ?? "Unknown game")
                 Text(self.speedrun.times.primary)
                 Text(self.speedrun.date ?? "Unknown run date")
                 Text(self.speedrun.status.rawValue)
