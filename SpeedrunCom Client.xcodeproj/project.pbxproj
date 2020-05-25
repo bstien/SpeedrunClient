@@ -42,6 +42,7 @@
 		68AE0C7C45EFF98BEE4C32BE /* FailableDecodableArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68AE0FE30EA01534E448E358 /* FailableDecodableArray.swift */; };
 		68AE0CB22787E893CEB6C69F /* GameType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68AE0DDB4E771A8A5FE4FE31 /* GameType.swift */; };
 		68AE0CC05458E79BF85B4F70 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68AE0C1F84070B68DD4D9460 /* AppDelegate.swift */; };
+		68AE0D5555DE7893D9AF34CD /* RunVideos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68AE096EFC7BEEC102AC3CDD /* RunVideos.swift */; };
 		68AE0D5B89DB1F72C4F6BBEA /* SpeedrunFilterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68AE080E5C5E5D83B2A0AFBE /* SpeedrunFilterView.swift */; };
 		68AE0D60C699DED0E9AE2E2C /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68AE02DC0E6743DF0C58CECC /* Endpoint.swift */; };
 		68AE0E3F25631C619086C652 /* RemoteImageClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68AE06F88B7AD6C7C59A87A5 /* RemoteImageClient.swift */; };
@@ -73,6 +74,7 @@
 		68AE080E5C5E5D83B2A0AFBE /* SpeedrunFilterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpeedrunFilterView.swift; sourceTree = "<group>"; };
 		68AE08811FF5B975E0861F24 /* LinkKind.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LinkKind.swift; sourceTree = "<group>"; };
 		68AE09052DDC2E8218110885 /* SearchGamesViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchGamesViewModel.swift; sourceTree = "<group>"; };
+		68AE096EFC7BEEC102AC3CDD /* RunVideos.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RunVideos.swift; sourceTree = "<group>"; };
 		68AE0982CDACBADA6D92F982 /* Link.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Link.swift; sourceTree = "<group>"; };
 		68AE09F61DA72D0B7C50F1B1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		68AE0A040055FC1EC5AF7F66 /* SpeedrunCom Client.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SpeedrunCom Client.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -183,6 +185,7 @@
 			children = (
 				68AE000A7078DA4937EEEF38 /* Speedrun.swift */,
 				68AE0AF3030B7DE9CA049E78 /* RunTimes.swift */,
+				68AE096EFC7BEEC102AC3CDD /* RunVideos.swift */,
 			);
 			path = Speedrun;
 			sourceTree = "<group>";
@@ -393,6 +396,7 @@
 				68AE0E3F25631C619086C652 /* RemoteImageClient.swift in Sources */,
 				68AE0A3D516427E7B33A027F /* PlatformClient.swift in Sources */,
 				68AE0BADCD3ABD827D00E4C4 /* SpeedrunDetailView.swift in Sources */,
+				68AE0D5555DE7893D9AF34CD /* RunVideos.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

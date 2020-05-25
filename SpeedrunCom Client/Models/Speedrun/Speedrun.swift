@@ -6,6 +6,7 @@ struct Speedrun: Decodable, Identifiable {
     let date: String?
     let game: Game
     let times: RunTimes
+    let videos: RunVideos?
     let links: [Link]
 
     enum CodingKeys: String, CodingKey {
@@ -14,6 +15,7 @@ struct Speedrun: Decodable, Identifiable {
         case date
         case game
         case times
+        case videos
         case links
     }
 
@@ -29,6 +31,7 @@ struct Speedrun: Decodable, Identifiable {
         date = try? container.decode(String.self, forKey: .date)
         game = (try container.nestedContainer(keyedBy: DataCodingKeys.self, forKey: .game).decode(Game.self, forKey: .data))
         times = try container.decode(RunTimes.self, forKey: .times)
+        videos = try? container.decode(RunVideos.self, forKey: .videos)
         links = try container.decode(FailableDecodableArray<Link>.self, forKey: .links).elements
     }
 }
