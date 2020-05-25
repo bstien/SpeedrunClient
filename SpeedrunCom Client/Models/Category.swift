@@ -11,4 +11,14 @@ struct Category: Decodable {
     let type: Kind
     let rules: String?
     let links: [Link]
+    let isMiscellaneous: Bool
+
+    enum CodingKeys: String, CodingKey {
+        case id
+        case name
+        case type
+        case rules
+        case links
+        case isMiscellaneous = "miscellaneous"
+    }
 }
